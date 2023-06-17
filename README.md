@@ -12,7 +12,7 @@ How to use the TinyVicky 'bin' version:
   * Build the vcproj accordingly.
   * Use a tool like the 'F256 Uploader', distributed by the hardware vendor, or FoenixMgr available [here](https://github.com/pweingar/FoenixMgr) to transmit the binary over COM3 (USB) interface. Choose "Boot from RAM" and load it at 0x800.
 
-<img src="https://raw.githubusercontent.com/clandrew/wormhole/main/Images/wormhole.PNG" width="470" >
+<img src="https://raw.githubusercontent.com/clandrew/wormhole/main/Images/wormhole.f256.PNG" width="470" >
 
 [![IMAGE ALT TEXT](http://img.youtube.com/vi/vjkgd6v-hJM/0.jpg)](http://www.youtube.com/watch?v=vjkgd6v-hJM "Video Title")
 
