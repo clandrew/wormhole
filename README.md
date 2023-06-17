@@ -7,11 +7,10 @@ This is a port of that sample. Some details are described more [in this blog pos
 
 Like the 'img' sample, you'll find there are two versions: a C256-based Vicky II one and an F256-based TinyVicky one.
 
-How to build and load the TinyVicky 'bin' version:
+How to use the TinyVicky 'bin' version:
+  * Use an F256 system with a 65816-based CPU.
   * Build the vcproj accordingly.
   * Use a tool like the 'F256 Uploader', distributed by the hardware vendor, or FoenixMgr available [here](https://github.com/pweingar/FoenixMgr) to transmit the binary over COM3 (USB) interface. Choose "Boot from RAM" and load it at 0x800.
-
-The F256 version of sample uses 65816-based code, and requires a 65816-based CPU.
 
 ![alt text](https://raw.githubusercontent.com/clandrew/wormhole/main/Images/wormhole.PNG?raw=true)
 
