@@ -23,6 +23,13 @@ There are three built versions of the demo you can choose from
 * A .BIN, for F256 Foenix, loaded at address 0800
 * A .HEX, for F256 Foenix, compatible with [new support I added for 816-based f256](https://github.com/clandrew/fnxide/commit/c7dc6c1a05816ec8739ab344b915de85b0d9069d) in FoenixIDE
 
+See the [Releases](https://github.com/clandrew/wormhole/releases) page to download.
+
+-----
+## Earlier Versions
+
+Earlier versions of this demo were posted to the [fnxapp](https://github.com/clandrew/fnxapp/) repo, with a full commit history there. Eventually, the demo out-grew that repository and being shared with so many other things, so it was pulled out and moved here.
+
 -----
 
 ## Build
@@ -32,3 +39,5 @@ This demo is set up using Visual Studio 2019 which calls [64tass](https://tass64
 There are Visual Studio custom build steps which call into [64tass](https://tass64.sourceforge.net). You may need to update these build steps to point to wherever the 64tass executable lives on your machine. If there is an error when assembling, the message pointing to the line number gets conveniently reported through to the IDE that way.
 
 For a best experience, consider using [this Visual Studio extension](https://github.com/clandrew/vscolorize65c816) for 65c816-based syntax highlighting.
+
+
