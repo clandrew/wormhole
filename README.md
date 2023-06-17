@@ -14,4 +14,4 @@ How to build and load the TinyVicky 'bin' version:
 
 The F256 version of sample uses 65816-based code, and requires a 65816-based CPU.
 
-![alt text](https://raw.githubusercontent.com/clandrew/fnxapp/main/Images/wormhole.PNG?raw=true)
+![alt text](https://raw.githubusercontent.com/clandrew/wormhole/main/Images/wormhole.PNG?raw=true)
