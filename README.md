@@ -14,7 +14,7 @@ How to use the TinyVicky 'bin' version:
 
 <img src="https://raw.githubusercontent.com/clandrew/wormhole/main/Images/wormhole.PNG" width="470" >
 
-[![IMAGE ALT TEXT](http://img.youtube.com/vi/b-VMIhoMwZ0/0.jpg)](http://www.youtube.com/watch?v=b-VMIhoMwZ0 "Video Title")
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/vjkgd6v-hJM/0.jpg)](http://www.youtube.com/watch?v=vjkgd6v-hJM "Video Title")
 
 -----
 ## Release
