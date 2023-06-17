@@ -28,7 +28,7 @@ See the [Releases](https://github.com/clandrew/wormhole/releases) page to downlo
 -----
 ## Earlier Versions
 
-Earlier versions of this demo were posted to the [fnxapp](https://github.com/clandrew/fnxapp/) repo, with a full commit history there. Eventually, the demo out-grew that repository and being shared with so many other things, so it was pulled out and moved here.
+Earlier versions of this demo were posted to the [fnxapp](https://github.com/clandrew/fnxapp/) repo, with a full commit history there. Eventually, the demo out-grew that repository and being shared with so many other things, so it was pulled out and moved into its own separate repository here.
 
 -----
 
