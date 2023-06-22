@@ -15,12 +15,7 @@ AnimationCounter = $37
 * = $000000 
         .byte 0
 
-.if TARGETFMT = "hex"
 * = $00E000
-.endif
-.if TARGETFMT = "bin"
-* = $00E000-$800
-.endif
 .logical $E000
 
 ; Data buffers used during palette rotation. It'd be possible to reorganize the code to simply use
@@ -714,23 +709,13 @@ TX_DEMOTEXT
 ; Emitted with 
 ;     D:\repos\fnxapp\BitmapEmbedder\x64\Release\BitmapEmbedder.exe D:\repos\fnxapp\wormhole\tinyvicky\rsrc\wormhole.bmp D:\repos\fnxapp\wormhole\tinyvicky\rsrc\colors.s D:\repos\fnxapp\wormhole\tinyvicky\rsrc\pixmap.s --halfsize
 
-.if TARGETFMT = "hex"
 * = $010000
-.endif
-.if TARGETFMT = "bin"
-* = $010000-$800
-.endif
 .logical $10000
 .include "rsrc/pixmap.s"
 .endlogical
 
 ; Write the system vectors
-.if TARGETFMT = "hex"
 * = $00FFF8
-.endif
-.if TARGETFMT = "bin"
-* = $00FFF8-$800
-.endif
 .logical $FFF8
 .byte $00
 F256_DUMMYIRQ       ; Abort vector
