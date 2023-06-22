@@ -7,12 +7,9 @@
 
 dst_pointer = $30
 src_pointer = $32
-column = $34
-bm_bank = $35
 TextLength = $36
 text_memory_pointer = $38
 AnimationCounter = $37
-line = $40
 
 ; Code
 * = $000000 
