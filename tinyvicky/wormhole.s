@@ -16,7 +16,6 @@ AnimationCounter = $37
         .byte 0
 
 * = $00E000
-.logical $E000
 
 ; Data buffers used during palette rotation. It'd be possible to reorganize the code to simply use
 ; one channel of these, but there's a memory/performance tradeoff and this chooses perf.
@@ -704,19 +703,15 @@ TextLutLoop
 TX_DEMOTEXT
 .text "Wormhole demo by haydenkale"
 .byte 0 ; null term
-.endlogical
 
 ; Emitted with 
 ;     D:\repos\fnxapp\BitmapEmbedder\x64\Release\BitmapEmbedder.exe D:\repos\fnxapp\wormhole\tinyvicky\rsrc\wormhole.bmp D:\repos\fnxapp\wormhole\tinyvicky\rsrc\colors.s D:\repos\fnxapp\wormhole\tinyvicky\rsrc\pixmap.s --halfsize
 
 * = $010000
-.logical $10000
 .include "rsrc/pixmap.s"
-.endlogical
 
 ; Write the system vectors
 * = $00FFF8
-.logical $FFF8
 .byte $00
 F256_DUMMYIRQ       ; Abort vector
     RTI
@@ -724,4 +719,3 @@ F256_DUMMYIRQ       ; Abort vector
 .word F256_DUMMYIRQ ; nmi
 .word F256_RESET    ; reset
 .word F256_DUMMYIRQ ; irq
-.endlogical
