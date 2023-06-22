@@ -7,9 +7,9 @@
 
 dst_pointer = $30
 src_pointer = $32
-TextLength = $36
+text_length = $36
 text_memory_pointer = $38
-AnimationCounter = $37
+animation_counter = $37
 
 ; Code
 * = $000000 
@@ -92,7 +92,7 @@ PrintAnsiString_EachCharToTextMemory
 
 PrintAnsiString_DoneStoringToTextMemory
 
-    STY TextLength
+    STY text_length
 
     LDA #$03 ; Set I/O page to 3
     STA MMU_IO_CTRL
@@ -132,7 +132,7 @@ UpdateTextColors_ForEachCharacter
     ADC #$10
     STA (text_memory_pointer),Y 
     INY
-    CPY TextLength
+    CPY text_length
     BNE UpdateTextColors_ForEachCharacter
     
     PLA
@@ -441,15 +441,15 @@ IRQ_Handler
     STA INT_PENDING_REG0
 
     ; Dec animation counter
-    LDA AnimationCounter
+    LDA animation_counter
     BNE AfterUpdateTextColors
 
     LDA #8
-    STA AnimationCounter
+    STA animation_counter
     JSR UpdateTextColors
 
 AfterUpdateTextColors
-    DEC AnimationCounter
+    DEC animation_counter
 
     LDA #1
     STA MMU_IO_CTRL
@@ -600,7 +600,7 @@ MAIN
     JSR Init_IRQHandler
     
     LDA #$01
-    STA AnimationCounter
+    STA animation_counter
 
 Lock
     JSR UpdateLut
