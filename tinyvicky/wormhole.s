@@ -567,9 +567,9 @@ MAIN
     JSR ClearScreen    
     
     ; Put text at the bottom of the screen, allowing for border
-    LDA #(<VKY_TEXT_MEMORY + $E8)
+    LDA #(<VKY_TEXT_MEMORY + $88)
     STA text_memory_pointer
-    LDA #((>VKY_TEXT_MEMORY) + $03)
+    LDA #((>VKY_TEXT_MEMORY) + $04)
     STA text_memory_pointer+1
 
     JSR PrintAnsiString
@@ -587,6 +587,9 @@ MAIN
     LDA #$01 
     STA TyVKY_BM0_CTRL_REG ; Make sure bitmap 0 is turned on. Setting no more bits leaves LUT selection to 0
     
+    ; Turn off the border
+    STZ VKY_BRDR_CTRL
+
     JSR CopyTextLutToDevice
 
     JSR CopyBitmapLutToDevice
