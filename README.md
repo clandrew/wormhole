@@ -23,7 +23,7 @@ On hardware:
 -----
 ## Release
 
-There are three built versions of the demo you can choose from
+There are three built binaries of the demo you can choose from
 * A .PGZ executable for C256 Foenix
 * A .BIN, for F256 Foenix, loaded at address 0800
 * A .HEX, for F256 Foenix, compatible with [new support I added for 816-based f256](https://github.com/clandrew/fnxide/commit/c7dc6c1a05816ec8739ab344b915de85b0d9069d) in FoenixIDE
