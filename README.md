@@ -7,7 +7,11 @@ This is a port of that sample. Some details are described more [in this blog pos
 
 There are two versions of the demo: a C256-based Vicky II one and an F256-based TinyVicky one.
 
-How to use the TinyVicky 'bin' version:
+The C256 version was tested on FoenixIDE emulator.
+
+The F256 version was tested on FoenixIDE emulator and on hardware.
+
+To load the F256 TinyVicky 'bin' version on hardware:
   * Use an F256 system with a 65816-based CPU.
   * Build the vcproj accordingly.
   * Use a tool like the 'F256 Uploader', distributed by the hardware vendor, or FoenixMgr available [here](https://github.com/pweingar/FoenixMgr) to transmit the binary over COM3 (USB) interface. Choose "Boot from RAM" and load it at 0x800.
